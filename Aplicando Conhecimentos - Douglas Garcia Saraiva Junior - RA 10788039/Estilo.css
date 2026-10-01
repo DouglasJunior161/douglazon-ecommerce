@@ -1,0 +1,243 @@
+/* CONFIGURAÇÕES GERAL SITE */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+article{
+
+    text-align: center;
+
+}
+
+section {
+    flex: 1;
+    text-align: center;
+}
+
+html {
+    width: 100%;
+}
+
+footer {
+    background-color: #131921;
+    padding: 20px 0;           
+    width: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    color: #ddd;
+}
+
+/* ---------------------------------------------------- */
+
+/* NAVEGAÇÃO */
+
+.barra-nav {
+    position: sticky;
+    display: flex;
+    align-items: center;         
+    justify-content: space-between; 
+    background-color: #131921;   
+    padding: 10px 20px;          
+    font-family: Arial, sans-serif;
+    
+}
+
+.nav-pesquisa {
+    display: flex;
+    flex-grow: 1;                
+    margin: 0 20px;              
+}
+
+.nav-pesquisa input {
+    width: 100%;                 
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;  
+}
+
+.nav-pesquisa button {
+    padding: 10px 20px;
+    background-color: #febd69;   
+    border: none;
+    border-radius: 0 4px 4px 0;  
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;                   
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;       
+    font-size: 20px;             
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+
+
+/* ---------------------------------------------------- */
+
+/* PRODUTOS */
+
+.produtos {
+    position: relative;
+    border-collapse: separate; 
+    border-spacing: 20px;       
+    font-family: Arial, sans-serif;
+}
+
+.produtos td {
+    background-color: white;
+    border: 1px solid #ddd;     
+    border-radius: 8px;         
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.produtos figcaption {
+    font-size: 16px;
+    color: #111;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.btn-comprar {
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 20px;        
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;               
+}
+
+.btn-comprar:hover {
+    background-color: #f7ca00;
+}
+
+/* ---------------------------------------------------- */
+
+/* FORMULARIO */
+
+.secao-contato {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.secao-contato h2 {
+    color: #111;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.secao-contato p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.campo-grupo label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato input[type="tel"],
+.form-contato input[type="date"],
+.form-contato select,
+.form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px; 
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-contato input:focus, 
+.form-contato select:focus, 
+.form-contato textarea:focus {
+    border-color: #e77600; 
+    outline: none;
+    box-shadow: 0 0 3px rgba(231, 118, 0, 0.5);
+}
+
+.opcoes-grupo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.titulo-grupo {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.opcao-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.opcao-item label {
+    font-size: 14px;
+    color: #111;
+    cursor: pointer;
+}
+
+.checkbox-item {
+    margin: 15px 0;
+}
+
+.btn-enviar {
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 4px; 
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%; 
+    transition: background-color 0.1s;
+    margin-top: 15px;
+}
+
+.btn-enviar:hover {
+    background-color: #f7ca00;
+}

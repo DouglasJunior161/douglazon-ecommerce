@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Douglazon Homepage</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Essa pagina é a atividade de FUNDAMENTOS DE WEB, onde desenvolvo uma pagina de vendas online parte do homepage">
+        <meta name="author" content="Douglas Garcia Saraiva Junior">
+        <link rel="stylesheet" href="Estilo.css">
+    </head>
+
+    <body>
+
+        <header>
+
+        <nav class="barra-nav">
+            
+            <div class="nav-logo">
+                <a href="Homepage - Douglazon - Aplicando Conhecimentos.html">
+                    <img src="imagens/douglazon_branco.png" alt="Homepage" style="height: 60px; width: auto;">
+                </a>
+            </div>
+
+            
+            <div class="nav-pesquisa">
+                <input id="pesquisa" type="text" required name="pesquisa" placeholder="Pesquisar">  
+                <button type="submit">Enviar</button>
+            </div>
+
+            
+            <div class="nav-links">
+                <a href="Produtos - Douglazon - Aplicando Conhecimentos.html">Produtos</a>
+                <a href="Contato - Douglazon - Aplicando Conhecimentos.html">Contato</a>
+            </div>
+        </nav>
+
+        </header>
+        
+        <section class="secao-contato">
+            <h2>FALE CONOSCO</h2>
+            <p>Preencha o formulário abaixo e nossa equipe entrará em contato com você.</p>
+
+            <form action="" method="post" class="form-contato">
+                
+                <div class="campo-grupo">
+                    <label for="nome">Nome Completo:</label>
+                    <input id="nome" type="text" required name="nome">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" required name="email" placeholder="atendimento@douglazon.com">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="telefone">Telefone:</label>
+                    <input id="telefone" type="tel" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input id="nascimento" type="date">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto">
+                        <option value="duvida">Dúvida sobre produto</option>
+                        <option value="pedido">Pedido</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+
+                <div class="opcoes-grupo">
+                    <span class="titulo-grupo">Preferência De Contato:</span>
+                    <div class="opcao-item">
+                        <input type="radio" id="WhatsApp" name="Preferencia" value="WhatsApp">
+                        <label for="WhatsApp">WhatsApp</label>
+                    </div>
+                    <div class="opcao-item">
+                        <input type="radio" id="E-mail" name="Preferencia" value="E-mail">
+                        <label for="E-mail">E-mail</label>
+                    </div>
+                    <div class="opcao-item">
+                        <input type="radio" id="Telefone" name="Preferencia" value="Telefone">
+                        <label for="Telefone">Telefone</label>
+                    </div>
+                </div>
+
+                <div class="opcao-item checkbox-item">
+                    <input type="checkbox" id="Ofertas" name="Ofertas" value="Sim">
+                    <label for="Ofertas">Quero receber ofertas e novidades</label>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="6"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar" class="btn-enviar">
+
+            </form>
+        </section>
+
+    </body>
+
+    <footer>
+        <p><b>&copy; 2026 Douglazon. <br/>Todos os direitos reservados.</b></p>
+    </footer>
+    
+</html>
