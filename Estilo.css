@@ -37,6 +37,7 @@ footer {
     color: #ddd;
     width: 100%;
     font-family: Arial, sans-serif;
+    margin-top: auto;
 }
 
 /* ---------------------------------------------------- */
@@ -268,9 +269,18 @@ footer {
 
 /* Footer */
 
+#footer-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
 .footer {
-    flex: 1;
+    grid-column: 2;
     text-align: center;
+    margin: 0;
 }
 
 
@@ -280,6 +290,8 @@ footer {
 /* JAVASCRIPT */
 
 .java-footer {
+    grid-column: 3;
+    justify-self: end;
     max-width: 400px;
     text-align: left;
     font-size: 13px;
@@ -379,9 +391,17 @@ footer {
 
 @media (max-width: 480px) {
     footer {
+        padding: 20px 15px;
+    }
+
+    #footer-container {
+        display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 20px 15px;
+    }
+
+    .footer {
+        text-align: center;
     }
 
     .java-footer {
